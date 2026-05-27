@@ -15,8 +15,8 @@ const atbash = (originalText) => {
             result += char
         } else if (char === char.toUpperCase()) {
             let indexNewChar = ((ruArr.length - 1) - ruArr.indexOf(char.toLowerCase()) + 1)
-            /*             console.log(indexNewChar)
-                        console.log(ruArr[indexNewChar]) */
+            /*     console.log(indexNewChar)
+                  console.log(ruArr[indexNewChar]) */
             result += ruArr[indexNewChar].toUpperCase()
         } else {
             let indexNewChar = ((ruArr.length - 1) - ruArr.indexOf(char.toLowerCase()) + 1)
