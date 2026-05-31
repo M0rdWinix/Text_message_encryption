@@ -1,8 +1,8 @@
-import { ruArr, specialChars } from "../data/alphabets.js"
+import { ruArr, specialChars } from "../../data/alphabets.js"
 
 /* не работает */
 
-const atbash = (originalText) => {
+const atbashEncrypt = (originalText) => {
     console.log(`--- Работа шифра Атбаш ---`)
     console.log(`Исходник - "${originalText}"`)
     let result = ''
@@ -15,8 +15,7 @@ const atbash = (originalText) => {
             result += char
         } else if (char === char.toUpperCase()) {
             let indexNewChar = ((ruArr.length - 1) - ruArr.indexOf(char.toLowerCase()) + 1)
-            /*     console.log(indexNewChar)
-                  console.log(ruArr[indexNewChar]) */
+
             result += ruArr[indexNewChar].toUpperCase()
         } else {
             let indexNewChar = ((ruArr.length - 1) - ruArr.indexOf(char.toLowerCase()) + 1)
@@ -29,6 +28,6 @@ const atbash = (originalText) => {
     console.log(`Правильный вариант - "Поцэъм фяф ыъуя! А Д @"`)
 }
 
-export { atbash }
+export { atbashEncrypt }
 
 /* не работает */

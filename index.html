@@ -9,8 +9,9 @@
   <link rel="icon" href="/images/favicon.ico" sizes="any">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Text_message_encryption</title>
-  <link rel="stylesheet" href="/src/style.css">
-  <link rel="stylesheet" href="/src/reset.css">
+  <link rel="stylesheet" href="/src/Styles/style.css">
+  <link rel="stylesheet" href="/src/Styles/reset.css">
+  <script type="module" src="/src/JS/main.js"></script>
 </head>
 
 <body>
@@ -24,39 +25,47 @@
 
     <div class="input_field">
       <h2 class="input_field-heading font">Исходный текст</h2>
-      <textarea name="input_field" id="input_field" class="input_field-textarea"></textarea>
+      <textarea name="input_field" id="textareaId" class="input_field-textarea" placeholder="Поле ввода текста"></textarea>
     </div>
 
     <div class="settings_container">
 
-      <div class="choosing_cipher">
-        <h3 class="choosing_cipher-heading font">ШИФР</h3>
-        <select name="select" id="select" class="choosing_cipher-select">
+      <div class="choosing_container">
+        <h3 class="choosing-heading font">ШИФР</h3>
+        <select name="selectCipher" id="selectCipherId" class="choosing-select">
           <option value="caesar">Цезарь</option>
           <option value="atbash">Atbash</option>
         </select>
       </div>
 
-      <div class="choosing_shift">
-        <h3 class="choosing_shift-heading font">СДВИГ (ДЛЯ ЦЕЗАРЯ)</h3>
-        <input type="number" name="shift" id="shift" min="1" max="33" class="choosing_shift-input">
+      <div class="choosing_container">
+        <h3 class="choosing-heading font">ЯЗЫК</h3>
+        <select name="selectLanguage" id="selectLanguageId" class="choosing-select">
+          <option value="russian">Русский</option>
+          <option value="english">Английский</option>
+        </select>
+      </div>
+
+      <div class="choosing_container">
+        <h3 class="choosing-heading font">СДВИГ (ДЛЯ ЦЕЗАРЯ)</h3>
+        <input type="number" value="1" name="shift" id="shiftId" min="1" max="33" class="choosing_shift-input">
       </div>
 
     </div>
 
     <div class="buttons_container">
 
-      <button type="button" class="button-main font">«Зашифровать»</button>
-      <button type="button" class="button-main font">«Расшифровать»</button>
-      <button type="button" class="button-main font">«Сохранить»</button>
-      <button type="button" class="button-main font">«Загрузить»</button>
+      <button type="button" class="buttons font" id="buttonEncryptId">«Зашифровать»</button>
+      <button type="button" class="buttons font" id="buttonDecryptId">«Расшифровать»</button>
+      <button type="button" class="buttons font">«Сохранить»</button>
+      <button type="button" class="buttons font">«Загрузить»</button>
 
     </div>
 
     <div class="result_container">
 
       <h4 class="result_container-heading font">Результат</h4>
-      <div class="result_container-output">Ожидание результата...</div>
+      <div class="result_container-output" id="resultId">Ожидание результата...</div>
 
     </div>
 

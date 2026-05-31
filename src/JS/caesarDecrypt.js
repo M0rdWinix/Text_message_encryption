@@ -1,4 +1,4 @@
-import { ruArr, specialChars } from "../data/alphabets.js"
+import { ruArr, specialChars } from "../../data/alphabets.js"
 
 const negativeIndexCheck = (index) => {
     const ruLength = ruArr.length
@@ -9,17 +9,19 @@ const negativeIndexCheck = (index) => {
     }
 }
 
-
-const end = (originalText, key) => {
-    /* console.log(`--- Расшифровка текта со сдвигом - "${key}" ---`)
-    console.log(`Исходник - "${originalText}"`) */
+const caesarDecrypt = (originalText, key) => {
+    console.log(`--- Расшифровка текта со сдвигом - "${key}" ---`)
+    console.log(`Исходник - "${originalText}"`)
+    
     let result = ''
 
     for (let i = 0; i < originalText.length; i++) {
 
         let char = originalText[i]
 
-        if (specialChars.includes(char)) {
+        if (!isNaN(char)) {
+            result += char
+        } else if (specialChars.includes(char)) {
             result += char
         } else if (char === char.toUpperCase()) {
             let indexNewChar = ruArr.indexOf(char.toLowerCase()) - key
@@ -30,8 +32,8 @@ const end = (originalText, key) => {
         }
     }
 
-    /* console.log(`Вывод - "${result}"`)
-    console.log(`Правильный вариант - "Привет как дела! Я Ы @"`) */
+    console.log(`Вывод - "${result}"`)
+    console.log(`Правильный вариант - "Привет как дела! Я Ы @ 5"`)
 }
 
-export { caesar, end }
+export { caesarDecrypt }
