@@ -22,7 +22,7 @@ const caesarEncrypt = (originalText, key, Language) => {
             alphabet = engArr
             break
     }
-
+    console.log(`Выбранный язык - ${alphabet}`)
     let result = ''
 
     for (let i = 0; i < originalText.length; i++) {
@@ -47,4 +47,5 @@ const caesarEncrypt = (originalText, key, Language) => {
     return result
 }
 
+/* caesarEncrypt() */
 export { caesarEncrypt }

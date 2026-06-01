@@ -13,8 +13,8 @@ const encryptButton = (textareaValue, optionValue, shiftValue, Language) => {
         case 'atbash':
             //atbash
             break
+            
     }
-
 }
 
 export { encryptButton }
