@@ -1,17 +1,6 @@
-import { encryptButton } from "./encryptButton.js"
-import { collector } from "./collector.js";
+import { encryptFunction } from "./encryptFunction.js"
 
-collector()
-
-const buttonEncrypt = () => {
-    encryptButton(collector())
-}
-
-
-
-
-
-
+document.getElementById('buttonEncryptId').addEventListener('click', encryptFunction)
 
 
 /* caesarEncrypt("Привет как дела! Я Ы @ 5", 10)

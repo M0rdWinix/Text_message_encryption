@@ -9,12 +9,12 @@ const positiveIndexCheck = (index) => {
     }
 }
 
-const caesarEncrypt = (originalText, key, Language) => {
+const caesarEncrypt = (originalText, key, language) => {
     console.log(`--- Шифрование текта со сдвигом - "${key}" ---`)
     console.log(`Исходник - "${originalText}"`)
     let alphabet = ''
 
-    switch (Language) {
+    switch (language) {
         case 'russian':
             alphabet = ruArr
             break

@@ -3,13 +3,12 @@ const collector = () => {
     const optionValue = document.getElementById("selectCipherId").value // Тип шифрования
     const shiftValue = document.getElementById("shiftId").valueAsNumber // Сдвиг для цезаря
     const resultValue = document.getElementById("resultId") // блок с результатом
-    const Language = document.getElementById("selectLanguageId").value // язык
+    const language = document.getElementById("selectLanguageId").value // язык
 
     /* alert(`Исходный текст = ${textareaValue}, ШИФР = ${optionValue}, СДВИГ = ${shiftValue}, Язык = ${Language}`) */
-    console.log( { textareaValue, optionValue, shiftValue, Language } )
-    const objectOfValue = { textareaValue, optionValue, shiftValue, Language }
-    console.log(objectOfValue)
-    return objectOfValue
+    const arrayOfValue = [ textareaValue, optionValue, shiftValue, language ]
+    console.log(arrayOfValue)
+    return arrayOfValue
 }
 
 export { collector }
