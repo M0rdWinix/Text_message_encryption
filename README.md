@@ -14,10 +14,10 @@
 
 ```bash
 # Клонировать репозиторий
-git clone git@github.com:gtxpit/currencies.git
+git clone git@github.com:M0rdWinix/Text_message_encryption.git
 
 # Перейти в папку проекта
-cd currencies
+cd Text_message_encryption
 
 # Установить зависимости
 npm install
