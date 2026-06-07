@@ -1,8 +1,8 @@
-import { caesarEncrypt } from "./algorithms/caesar/caesarEncrypt.js";
+import { caesarDecrypt } from "./algorithms/caesar/caesarDecrypt.js";
 import { atbash } from "./algorithms/atbash.js";
 import { collector } from "./utils/collector.js";
 
-const encryptFunction = () => {
+const decryptFunction = () => {
 
     const data = collector()
 
@@ -17,25 +17,25 @@ const encryptFunction = () => {
                         if (data.shiftValue < 1 || data.shiftValue > 33 || Number.isNaN(data.shiftValue)) {
                             alert("Введите сдвиг для шифра цезаря в диапазоне от 1 до 33 включительно!")
                         } else {
-                            data.resultValue.textContent = caesarEncrypt(data.textareaValue, data.shiftValue, data.language)
+                            data.resultValue.textContent = caesarDecrypt(data.textareaValue, data.shiftValue, data.language)
                         }
-                        alert("Текст успешно зашифрован!")
+                        alert("Текст успешно расшифрован!")
                         break
                     case 'english':
                         if (data.shiftValue < 1 || data.shiftValue > 26 || Number.isNaN(data.shiftValue)) {
                             alert("Введите сдвиг для шифра цезаря в диапазоне от 1 до 26 включительно!")
                         } else {
-                            data.resultValue.textContent = caesarEncrypt(data.textareaValue, data.shiftValue, data.language)
+                            data.resultValue.textContent = caesarDecrypt(data.textareaValue, data.shiftValue, data.language)
                         }
-                        alert("Текст успешно зашифрован!")
+                        alert("Текст успешно расшифрован!")
                         break
                 }
                 break
             case 'atbash':
                 data.resultValue.textContent = atbash(data.textareaValue, data.language)
-                alert("Текст успешно зашифрован!")
+                alert("Текст успешно расшифрован!")
                 break
         }
 }
 
-export { encryptFunction }
+export { decryptFunction }

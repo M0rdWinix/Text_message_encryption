@@ -1,7 +1,9 @@
-import { encryptFunction } from "./encryptFunction.js"
+import { encryptFunction } from "./encryptFunction.js";
+import { decryptFunction } from "./decryptFunction.js";
+import { saveFunction } from "./save.js";
+import { downloadFunction } from "./download.js";
 
 document.getElementById('buttonEncryptId').addEventListener('click', encryptFunction)
-
-
-/* caesarEncrypt("Привет как дела! Я Ы @ 5", 10)
-caesarDecrypt("Щътлоь фйф нохй! И Е @ 5", 10) */
+document.getElementById('buttonDecryptId').addEventListener('click', decryptFunction)
+document.getElementById('buttonSave').addEventListener('click', saveFunction)
+document.getElementById('buttonDownload').addEventListener('click', downloadFunction)

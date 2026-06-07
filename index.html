@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <div class="main_container">
+  <div class="container">
 
     <div class="main_container-header">
       <h1 class="main_container-header-text font">
@@ -25,7 +25,8 @@
 
     <div class="input_field">
       <h2 class="input_field-heading font">Исходный текст</h2>
-      <textarea name="input_field" id="textareaId" class="input_field-textarea" placeholder="Поле ввода текста"></textarea>
+      <textarea name="input_field" id="textareaId" class="input_field-textarea"
+        placeholder="Поле ввода текста"></textarea>
     </div>
 
     <div class="settings_container">
@@ -57,8 +58,8 @@
 
       <button type="button" class="buttons font" id="buttonEncryptId">«Зашифровать»</button>
       <button type="button" class="buttons font" id="buttonDecryptId">«Расшифровать»</button>
-      <button type="button" class="buttons font">«Сохранить»</button>
-      <button type="button" class="buttons font">«Загрузить»</button>
+      <button type="button" class="buttons font" id="buttonSave">«Сохранить»</button>
+      <button type="button" class="buttons font" id="buttonDownload">«Загрузить»</button>
 
     </div>
 
@@ -68,11 +69,7 @@
       <div class="result_container-output" id="resultId">Ожидание результата...</div>
 
     </div>
-
-  </div>
-
-  <script type="module">
-  </script>
+    
 </body>
 
 </html>
