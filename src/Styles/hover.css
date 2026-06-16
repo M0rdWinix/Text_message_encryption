@@ -1,0 +1,47 @@
+.input_field-textarea:hover {
+    /* border-color: #FF7400; */
+    outline: 2px solid #FF7400;
+    outline-offset: 2px;
+}
+
+.input_field-textarea:focus {
+    outline: 2px solid #FF7400;
+    outline-offset: 2px;
+}
+
+.buttons:hover {
+    border-color: #FF7400;
+    background-color: #ff73008c;
+    color: #6b3000;
+}
+
+.buttons:focus {
+    outline: none;
+}
+
+.buttons:focus-visible {
+  border: 2px solid #FF7400;
+  outline: none;
+}
+
+.choosing-select:hover {
+    border-color: #FF7400;
+}
+
+.choosing-select:focus {
+    outline: none;
+}
+
+.choosing-select:focus-visible {
+    border-color: #FF7400;
+    outline: none;
+}
+
+.choosing_shift-input:hover {
+    border-color: #FF7400;
+}
+
+.choosing_shift-input:focus {
+    border-color: #FF7400;
+    outline: none;
+}

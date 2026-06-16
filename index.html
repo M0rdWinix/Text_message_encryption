@@ -10,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Text_message_encryption</title>
   <link rel="stylesheet" href="src/Styles/style.css">
+  <link rel="stylesheet" href="src/Styles/hover.css">
   <link rel="stylesheet" href="src/Styles/reset.css">
   <script type="module" src="src/JS/main.js"></script>
 </head>
@@ -47,7 +48,7 @@
         </select>
       </div>
 
-      <div class="choosing_container">
+      <div class="choosing_container" id="shiftDivId" style="display: flex">
         <h3 class="choosing-heading font">СДВИГ (ДЛЯ ЦЕЗАРЯ)</h3>
         <input type="number" value="1" name="shift" id="shiftId" min="1" max="33" class="choosing_shift-input">
       </div>
@@ -69,7 +70,19 @@
       <div class="result_container-output" id="resultId">Ожидание результата...</div>
 
     </div>
-    
+
+    <Script>
+      const selectCipher = document.getElementById('selectCipherId')
+      const containerShift = document.getElementById('shiftDivId')
+
+      selectCipher.addEventListener('change', function () {
+        if (this.value === 'caesar') {
+          containerShift.style.display = 'flex';
+        } else {
+          containerShift.style.display = 'none';
+        }
+      })
+    </Script>
 </body>
 
 </html>

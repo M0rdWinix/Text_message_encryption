@@ -1,29 +1,5 @@
 body {
-    background-color: rgb(218, 218, 218);
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-color: #fff;
-    box-shadow: -3px 3px 10px 0px rgba(0, 0, 0, 0.5);
-    margin: 100px auto;
-    max-width: 1000px;
-    border-radius: 20px;
-    padding: 0px 30px 30px;
-}
-
-.main_container-header {
-    background-color: bisque;
-    height: 80px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom: 1.5px solid rgb(58, 50, 39);
-    display: flex;
-    align-items: end;
-    padding: 10px;
-    margin: 0px -30px;
+    background-color: rgb(233, 233, 233);
 }
 
 .font {
@@ -31,15 +7,39 @@ body {
     font-weight: bold;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    border: 2px solid #006561;
+    margin: 100px auto;
+    max-width: 1000px;
+    border-radius: 20px;
+    padding: 0px 30px 30px;
+}
+
+.main_container-header {
+    background-color: #009B95;
+    height: 80px;
+    border-top-right-radius: 17.5px;
+    border-top-left-radius: 17.5px;
+    border-bottom: 2px solid #006561;
+    display: flex;
+    align-items: end;
+    padding: 10px;
+    margin: 0px -30px;
+}
+
 .main_container-header-text {
     font-size: 17px;
-    color: rgb(100, 79, 52);
+    color: #003533;
     margin-bottom: 10px;
     margin-left: 20px;
 }
 
 .input_field-heading {
-    color: rgb(58, 50, 39);
+    color: #003533;
     margin-bottom: 15px;
     font-size: 14px;
 }
@@ -50,7 +50,8 @@ body {
     width: 100%;
     max-width: 1000px;
     min-height: 100px;
-    border-color: bisque;
+    border-color: #006561;
+    border-width: 2px;
     padding: 10px;
     resize: vertical;
 }
@@ -61,7 +62,7 @@ body {
     padding: 15px;
     width: 100%;
     border-radius: 15px;
-    background-color: rgb(255, 247, 237);
+    background-color: #009b968c;
     gap: 30px;
 }
 
@@ -76,7 +77,7 @@ body {
     width: 100%;
     height: 50px;
     border-radius: 15px;
-    border: 1px solid rgb(185, 173, 158);
+    border: 2px solid #006561;
     padding-left: 15px;
 }
 
@@ -85,12 +86,12 @@ body {
     height: 100%;
     width: 100%;
     border-radius: 15px;
-    border: 1px solid rgb(185, 173, 158);
+    border: 2px solid #006561;
     padding-left: 15px;
 }
 
 .choosing-heading {
-    color: rgb(58, 50, 39);
+    color: #003533;
     font-size: 14px;
 }
 
@@ -103,23 +104,22 @@ body {
 .buttons {
     padding: 15px;
     border-radius: 20px;
-    border: 1px solid bisque;
-    background-color: rgb(255, 246, 235);
-    color: rgb(58, 50, 39);
+    border: 2px solid #006561;
+    background-color: #009b968c;
+    color: #003533;
     cursor: pointer;
 }
 
 .result_container-heading {
-    color: rgb(58, 50, 39);
+    color: #003533;
     margin-bottom: 15px;
     font-size: 14px;
 }
 
 .result_container-output {
     word-break: break-all;
-    border: 1px solid bisque;
+    border: 2px solid #006561;
     width: auto;
-    background-color: rgb(255, 246, 235);
     padding: 15px;
     margin-top: 10px;
     border-radius: 15px;
