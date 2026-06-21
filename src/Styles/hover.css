@@ -13,6 +13,7 @@
     border-color: #FF7400;
     background-color: #ff73008c;
     color: #6b3000;
+    transform: scale(1.03);
 }
 
 .buttons:focus {

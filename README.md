@@ -1,6 +1,6 @@
 # Text_message_encryption
 ## Деплой: https://m0rdwinix.github.io/Text_message_encryption/
-<img width="1103" height="620" alt="image" src="https://github.com/user-attachments/assets/408c2418-6b0c-4508-8e14-0dfdbce9b63e" />
+<img width="1103" height="620" alt="image" src="images/TEimage.png" />
 
 ## 🛠️ Технологии
 
